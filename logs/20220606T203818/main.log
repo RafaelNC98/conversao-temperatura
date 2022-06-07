@@ -1,0 +1,10 @@
+[2022-06-06 20:38:19.061] [main] [info] window#load: attempt to load window (id: 1)
+[2022-06-06 20:38:19.080] [main] [info] update#setState idle
+[2022-06-06 20:38:19.104] [main] [info] ExtensionHostStarterWorker created
+[2022-06-06 20:38:20.269] [main] [info] window#load: window reported ready (id: 1)
+[2022-06-06 20:38:20.694] [main] [info] Starting extension host with pid 67657 (fork() took 11 ms).
+[2022-06-06 20:38:20.695] [main] [info] ExtensionHostStarterWorker.start() took 17 ms.
+[2022-06-06 20:38:22.315] [main] [info] Waiting for extension host with pid 67657 to exit.
+[2022-06-06 20:38:22.321] [main] [info] Extension host with pid 67657 exited with code: 0, signal: null.
+[2022-06-06 20:38:22.898] [main] [warning] [storage main] detected slow close() operation: Time: 599ms, DB size: 20480b, Large Keys: __$__targetStorageMarker:884, workbench.view.debug.state:536, memento/workbench.parts.editor:375, workbench.explorer.views.state:265, workbench.panel.placeholderPanels:240
+[2022-06-06 20:38:22.902] [main] [warning] [storage main] detected slow close() operation: Time: 601ms, DB size: 126976b, Large Keys: iconThemeData:88500, colorThemeData:9722, workbench.activity.placeholderViewlets:3325, __$__targetStorageMarker:1276, memento/customEditors:766

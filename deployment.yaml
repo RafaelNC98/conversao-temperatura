@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: conversao-tempatura
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: conversao-tempatura
+  template:
+    metadata:
+      labels:
+        app: conversao-tempatura
+    spec:
+      containers:
+        - name: conversao-tempatura
+          image: rafael625198/conversao-tempatura:latest
+          ports:
+            - containerPort: 80
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: conversao-tempatura
+spec:
+  selector:
+    app: conversao-tempatura
+  ports:
+  - port: 80
+    targetPort: 8080
+    nodePort: 30000
+  type: NodePort
